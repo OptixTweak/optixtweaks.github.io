@@ -1,0 +1,23 @@
+[WARN] The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: "pnpm.patchedDependencies", "pnpm.overrides". See https://pnpm.io/settings for the new home of each setting.
+
+> optix-tweaks-shop-v2@1.0.0 build /home/ubuntu/optix-tweaks-shop-v2
+> vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+vite v7.1.9 building for production...
+transforming...
+✓ 1778 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/public/index.html                 368.44 kB │ gzip: 105.88 kB
+../dist/public/assets/index-BbeHztAt.css  129.56 kB │ gzip:  22.12 kB
+../dist/public/assets/index-COhh1n1f.js   855.76 kB │ gzip: 228.83 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.84s
+
+  dist/index.js  77.8kb
+
+⚡ Done in 6ms
